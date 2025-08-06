@@ -1,43 +1,43 @@
 ```markdown
-# 📋 Plan Testów - AutomationExercise
+# 📋 Test Plan - AutomationExercise
 
-## 🎯 Cel testów
+## 🎯 Test Goal
 
-Celem testów jest weryfikacja poprawności działania kluczowych funkcji sklepu online automationexercise.com, w tym rejestracji, logowania, zakupów oraz integracji API.
+Tests goal is to verify the correct functionality of key functions for an online shop automationexercise.com such as: registration, logging in, shopping and API integration.
 
-## 🧱 Zakres testów
+## 🧱 Test scope:
 
 ### UI:
 
-- Rejestracja i logowanie
-- Dodawanie produktów do koszyka
-- Finalizacja zakupu
-- Wylogowanie
-- Testy negatywne
-- Smoke testy
+- Sign in and sign up
+- Adding products to cart
+- Checkout
+- Logging out
+- Negative tests
+- Smoke tests
 
 ### API:
 
-- Autoryzacja użytkownika
-- Operacje na koszyku
-- Walidacja odpowiedzi JSON
-- Obsługa błędów
+- User authentification
+- Cart operations
+- JSON response validation
+- Error handling
 
-## 🧪 Podejście do testowania
+## 🧪 Test approach
 
-- Zautomatyzowane testy UI z wykorzystaniem Playwright i Page Object Model
-- Testy API z wykorzystaniem Postman + Newman
-- Raportowanie Allure
-- Automatyzacja przez GitHub Actions
+- Automated UI tests with Playwright and Page Object Model use
+- TAPI test with Postman + Newman use
+- Allure raporting
+- Automation via GitHub Actions
 
-## ✅ Pokrycie funkcjonalne
+## ✅ Functional Coverage
 
-| Funkcja                 | Pokryta testem UI | Pokryta testem API |
+| Function                 | UI               | API |
 | ----------------------- | ----------------- | ------------------ |
-| Rejestracja             | ✅                | ❌                 |
-| Logowanie               | ✅                | ✅                 |
-| Dodanie do koszyka      | ✅                | ✅                 |
-| Finalizacja zakupu      | ✅                | ❌                 |
-| Obsługa błędów          | ✅                | ✅                 |
+| Registration            | ✅                | ❌                 |
+| Login                   | ✅                | ✅                 |
+| Adding to Cart          | ✅                | ✅                 |
+| Checkout                | ✅                | ❌                 |
+| Error handling          | ✅                | ✅                 |
 | Smoke test (happy path) | ✅                | ❌                 |
 ```

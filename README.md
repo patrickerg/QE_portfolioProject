@@ -1,10 +1,10 @@
 # 🧪 AutomationExercise E2E Project with Playwright
 
-## 📌 Opis projektu
+## 📌 Project description
 
-Projekt testów automatycznych dla strony [automationexercise.com](https://automationexercise.com) z wykorzystaniem Playwright (TypeScript) w podejściu Page Object Model. Projekt zawiera testy UI oraz testy API, integrację CI/CD przez GitHub Actions, generowanie raportów Allure oraz pełną dokumentację testów.
+Automation test project for [automationexercise.com](https://automationexercise.com) using Playwright with TypeScript and the Page Object Model approach. Project includes UI and API tests, CI/CD integration via GitHub Actions, Allure Report generation and a full test documentation.
 
-## 🛠️ Użyte technologie
+## 🛠️ Used technologies
 
 - [Playwright](https://playwright.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
@@ -13,28 +13,28 @@ Projekt testów automatycznych dla strony [automationexercise.com](https://autom
 - [Postman / Newman (dla API)](https://www.postman.com/)
 - Page Object Model (POM)
 
-## 🧪 Scenariusze testowe
+## 🧪 Test case scenarios
 
 ### UI:
 
-- ✅ Rejestracja nowego użytkownika
-- ✅ Logowanie (poprawne/błędne dane)
-- ✅ Dodawanie produktu do koszyka
-- ✅ Finalizacja zakupu
-- ✅ Wylogowanie
-- ✅ Testy negatywne: puste hasło, niedozwolona ilość
-- ✅ Smoke test: pełny flow zakupu
+- ✅ New user registration
+- ✅ Login (with valid and invalid data)
+- ✅ Adding to cart
+- ✅ Checkout
+- ✅ Logging out
+- ✅ Negative tests: empty password, wrong amount of products in cart
+- ✅ Smoke test: full shopping flow
 
 ### API:
 
-- ✅ Logowanie przez API
-- ✅ Dodanie produktu do koszyka
-- ✅ Walidacja JSON response
-- ✅ Obsługa błędów (np. 401)
+- ✅ Login via API
+- ✅ Adding to cart
+- ✅ JSON response validation
+- ✅ Error handling (e.g. 401)
 
-## 🚀 Jak uruchomić projekt lokalnie
+## 🚀 How to run project locally
 
-1. **Sklonuj repozytorium:**
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/twoj-login/automationexercise-playwright.git
    cd automationexercise-playwright
