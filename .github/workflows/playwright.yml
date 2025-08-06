@@ -21,6 +21,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+
       # ← Add your .env creation step here
       - name: 🔐 Create .env file with secrets
         run: |
