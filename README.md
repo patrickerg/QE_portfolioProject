@@ -10,7 +10,7 @@ Automation test project for [automationexercise.com](https://automationexercise.
 - [TypeScript](https://www.typescriptlang.org/)
 - [Allure Reports](https://docs.qameta.io/allure/)
 - [GitHub Actions](https://docs.github.com/en/actions)
-- [Postman / Newman (dla API)](https://www.postman.com/)
+- [Postman / Newman (for API)](https://www.postman.com/)
 - Page Object Model (POM)
 
 ## 🧪 Test case scenarios
