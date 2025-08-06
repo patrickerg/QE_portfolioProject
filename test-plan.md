@@ -33,7 +33,7 @@ Tests goal is to verify the correct functionality of key functions for an online
 ## ✅ Functional Coverage
 
 | Function                | UI                | API |
-| ----------------------- | ----------------- | ------------------|
+| ----------------------- | ----------------- | -------------------|
 | Registration            | ✅                | ❌                 |
 | Login                   | ✅                | ✅                 |
 | Adding to Cart          | ✅                | ✅                 |
