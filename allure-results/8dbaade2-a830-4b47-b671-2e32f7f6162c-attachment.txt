@@ -1,0 +1,2 @@
+Consent modal is visible
+Clicked Consent button
