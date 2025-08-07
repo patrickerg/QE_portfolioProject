@@ -1,38 +1,22 @@
 import { Page, expect } from "@playwright/test";
 
 export class CartPage {
-  constructor(private page: Page) {
-    this.page = page;
-  }
+  constructor(private page: Page) {}
 
-  async checkThatLogged() {
-    const loggedInURL = "https://automationexercise.com";
-    await expect(this.page.url()).toBe(loggedInURL);
+  async goToProductPage() {
+    await this.page.locator("a", { hasText: "View Product" }).first().click();
   }
-
-  async waitForProductsToLoad() {
-    const product = this.page.locator(".single-products").first();
-    await expect(product).toBeVisible({ timeout: 10000 });
+  async addToCart() {
+    // Click cart
+    await this.page
+      .locator(".cart")
+      .waitFor({ state: "visible", timeout: 5000 });
+    await this.page.locator(".cart").click();
   }
-  async addItemToCart(productName: string) {
-    await this.waitForProductsToLoad(); // Add this line
-    const product = this.page.locator(
-      `.single-products:has-text("${productName}")`
-    );
-    await expect(product).toBeVisible();
-    await product.locator('button:has-text("Add to cart")').click();
-    await expect(this.page.locator(".modal-body")).toBeVisible();
-    await this.page.locator('button:has-text("Continue Shopping")').click();
-  }
-  async removeItemFromCart(itemName: string) {
-    await this.page.click(`button[data-test="remove-${itemName}"]`);
-  }
-  async assertItemInCart(itemName: string) {
-    // Example implementation: check if item is visible in cart
-    await expect(this.page.locator(`text=${itemName}`)).toBeVisible();
-  }
-  async assertItemNotInCart(itemName: string) {
-    // Check that the item is not visible in the cart
-    await expect(this.page.locator(`text=${itemName}`)).not.toBeVisible();
+  async assertAddedToCart() {
+    // Assert continue shopping is visible
+    await expect(
+      this.page.getByRole("button", { name: "Continue Shopping" })
+    ).toBeVisible();
   }
 }

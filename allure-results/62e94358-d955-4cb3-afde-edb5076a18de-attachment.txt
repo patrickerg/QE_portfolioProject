@@ -1,0 +1,1 @@
+Product 0 quantity text: 7 parsed quantity: 7

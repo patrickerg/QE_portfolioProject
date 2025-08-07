@@ -10,13 +10,10 @@ export class LoginPage {
     const consentButton = this.page.locator('button:has-text("Consent")');
 
     if (await consentModal.isVisible()) {
-      console.log("Consent modal is visible");
-
       await expect(consentButton).toBeVisible({ timeout: 5000 });
       await expect(consentButton).toBeEnabled();
 
       await consentButton.click();
-      console.log("Clicked Consent button");
     }
   }
 

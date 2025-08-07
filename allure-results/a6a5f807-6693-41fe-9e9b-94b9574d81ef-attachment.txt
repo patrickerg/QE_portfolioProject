@@ -1,0 +1,4 @@
+Before click: button visible = true
+After click
+Modal count: 1
+Modal visible: false
