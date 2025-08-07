@@ -19,8 +19,8 @@ Automation test project for [automationexercise.com](https://automationexercise.
 
 - ✅ New user registration
 - ✅ Login (with valid and invalid data)
-- ✅ Adding to cart
-- ✅ Checkout
+- ✅ Cart Flow tests
+- ✅ Checkout tests
 - ✅ Logging out
 - ✅ Negative tests: empty password, wrong amount of products in cart
 - ✅ Smoke test: full shopping flow

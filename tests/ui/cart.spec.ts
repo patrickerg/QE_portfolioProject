@@ -22,4 +22,8 @@ test.describe("Cart flow tests", () => {
     await cartPage.addToCart();
     await cartPage.assertAddedToCart();
   });
+  test(" @smoke Remove a product from cart and verify", async ({ page }) => {});
+  test(" @smoke Verify cart is empty after removing product", async ({
+    page,
+  }) => {});
 });
