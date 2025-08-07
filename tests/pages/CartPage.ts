@@ -15,6 +15,7 @@ export class CartPage {
     await expect(product).toBeVisible({ timeout: 10000 });
   }
   async addItemToCart(productName: string) {
+    await this.waitForProductsToLoad(); // Add this line
     const product = this.page.locator(
       `.single-products:has-text("${productName}")`
     );
